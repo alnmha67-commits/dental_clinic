@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(161, 198, 198);
+}
+
+.x1{
+    display: inline-block;
+    border: 2px blue solid;
+    width: 200;
+    height: 50;
+}
+.x1 h1{
+    color:black;
+    text-align: center;
+}
+.x2{
+    display: inline-block;
+    border: 2px blue solid;
+    width: 200;
+    height: 50;
+}
+.x2 h1{
+    color: black;
+    text-align: center;
+}
+.x3{
+    width: 200px;
+    height: 50px;
+    border: 2px blue solid;
+}
+.x4{
+    border: 2px blue solid;
+}

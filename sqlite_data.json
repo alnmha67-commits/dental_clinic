@@ -1,0 +1,770 @@
+[
+{
+  "model": "my_project.doctor",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "job": "دكتور تجميل الاسنان",
+    "discription": "خريج جامعة الملك طلال وحاصل على مرتبة الشرف",
+    "img": "doctors/WhatsApp_Image_2026-09-06_at_1_tV5fbSU.24.33_AM_3.jpeg"
+  }
+},
+{
+  "model": "my_project.doctor",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "job": "دكتور جراحة الفك",
+    "discription": "خبره اكثر من عشر سنوات في مجال التركيبات  ",
+    "img": "doctors/WhatsApp_Image_2026-09-06_at_1_4NzCGSy.24.33_AM.jpeg"
+  }
+},
+{
+  "model": "my_project.patient",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "phone": "0808883637",
+    "date_of_birth": "2025-12-30"
+  }
+},
+{
+  "model": "my_project.patient",
+  "pk": 2,
+  "fields": {
+    "user": 5,
+    "phone": "0780034909",
+    "date_of_birth": "2025-12-30"
+  }
+},
+{
+  "model": "my_project.patient",
+  "pk": 3,
+  "fields": {
+    "user": 7,
+    "phone": "0780034909",
+    "date_of_birth": "2025-12-29"
+  }
+},
+{
+  "model": "my_project.patient",
+  "pk": 4,
+  "fields": {
+    "user": 8,
+    "phone": "0780034909",
+    "date_of_birth": "2025-12-29"
+  }
+},
+{
+  "model": "my_project.patient",
+  "pk": 5,
+  "fields": {
+    "user": 9,
+    "phone": "0780034909",
+    "date_of_birth": "2025-12-29"
+  }
+},
+{
+  "model": "my_project.patient",
+  "pk": 6,
+  "fields": {
+    "user": 10,
+    "phone": "0780034908",
+    "date_of_birth": "2025-07-29"
+  }
+},
+{
+  "model": "my_project.patient",
+  "pk": 7,
+  "fields": {
+    "user": 11,
+    "phone": "0808883637",
+    "date_of_birth": "2025-12-30"
+  }
+},
+{
+  "model": "my_project.patient",
+  "pk": 8,
+  "fields": {
+    "user": 12,
+    "phone": "0808883655",
+    "date_of_birth": "2025-12-29"
+  }
+},
+{
+  "model": "my_project.patient",
+  "pk": 9,
+  "fields": {
+    "user": 13,
+    "phone": "0780034905",
+    "date_of_birth": "2025-12-29"
+  }
+},
+{
+  "model": "my_project.patient",
+  "pk": 10,
+  "fields": {
+    "user": 14,
+    "phone": "0780034900",
+    "date_of_birth": "2002-05-29"
+  }
+},
+{
+  "model": "my_project.patient",
+  "pk": 11,
+  "fields": {
+    "user": 15,
+    "phone": "0780034905",
+    "date_of_birth": "2000-08-08"
+  }
+},
+{
+  "model": "my_project.patient",
+  "pk": 12,
+  "fields": {
+    "user": 17,
+    "phone": "0780034905",
+    "date_of_birth": "2000-03-01"
+  }
+},
+{
+  "model": "my_project.doctor_work",
+  "pk": 1,
+  "fields": {
+    "doctor": 1,
+    "day": "monday",
+    "start_work": "01:00:00",
+    "end_work": "09:00:00",
+    "date": "2026-10-05"
+  }
+},
+{
+  "model": "my_project.doctor_work",
+  "pk": 2,
+  "fields": {
+    "doctor": 2,
+    "day": "ss",
+    "start_work": "02:00:00",
+    "end_work": "09:00:00",
+    "date": "2026-11-02"
+  }
+},
+{
+  "model": "my_project.doctor_work",
+  "pk": 3,
+  "fields": {
+    "doctor": 2,
+    "day": "sandy",
+    "start_work": "01:00:00",
+    "end_work": "07:00:00",
+    "date": "2026-11-24"
+  }
+},
+{
+  "model": "my_project.doctor_work",
+  "pk": 4,
+  "fields": {
+    "doctor": 1,
+    "day": "monday",
+    "start_work": "01:00:00",
+    "end_work": "08:00:00",
+    "date": "2026-11-12"
+  }
+},
+{
+  "model": "my_project.appointment",
+  "pk": 1,
+  "fields": {
+    "start_appointment": "01:00:00",
+    "end_appointment": "01:30:00",
+    "patient": 1,
+    "doctor": 1,
+    "date": "2026-11-12",
+    "day": "monday",
+    "reson": "cacd'dd'd'",
+    "status": "confirmed"
+  }
+},
+{
+  "model": "my_project.appointment",
+  "pk": 2,
+  "fields": {
+    "start_appointment": "05:00:00",
+    "end_appointment": "05:30:00",
+    "patient": 1,
+    "doctor": 1,
+    "date": "2026-10-05",
+    "day": "monday",
+    "reson": "oooo",
+    "status": "confirmed"
+  }
+},
+{
+  "model": "my_project.appointment",
+  "pk": 3,
+  "fields": {
+    "start_appointment": "08:30:00",
+    "end_appointment": "09:00:00",
+    "patient": 1,
+    "doctor": 1,
+    "date": "2026-10-05",
+    "day": "monday",
+    "reson": "oooo",
+    "status": "confirmed"
+  }
+},
+{
+  "model": "my_project.appointment",
+  "pk": 4,
+  "fields": {
+    "start_appointment": "04:00:00",
+    "end_appointment": "04:30:00",
+    "patient": 1,
+    "doctor": 1,
+    "date": "2026-11-12",
+    "day": "monday",
+    "reson": "jjjj",
+    "status": "confirmed"
+  }
+},
+{
+  "model": "my_project.appointment",
+  "pk": 5,
+  "fields": {
+    "start_appointment": "07:00:00",
+    "end_appointment": "07:30:00",
+    "patient": 2,
+    "doctor": 1,
+    "date": "2026-10-05",
+    "day": "monday",
+    "reson": "jjjj",
+    "status": "confirmed"
+  }
+},
+{
+  "model": "my_project.appointment",
+  "pk": 6,
+  "fields": {
+    "start_appointment": "02:00:00",
+    "end_appointment": "02:30:00",
+    "patient": 2,
+    "doctor": 2,
+    "date": "2026-11-02",
+    "day": "ss",
+    "reson": "oooo",
+    "status": "confirmed"
+  }
+},
+{
+  "model": "my_project.appointment",
+  "pk": 7,
+  "fields": {
+    "start_appointment": "03:00:00",
+    "end_appointment": "03:30:00",
+    "patient": 3,
+    "doctor": 2,
+    "date": "2026-11-02",
+    "day": "ss",
+    "reson": "jjjj",
+    "status": "confirmed"
+  }
+},
+{
+  "model": "my_project.appointment",
+  "pk": 8,
+  "fields": {
+    "start_appointment": "04:30:00",
+    "end_appointment": "05:00:00",
+    "patient": 4,
+    "doctor": 1,
+    "date": "2026-10-05",
+    "day": "monday",
+    "reson": "ldldldo",
+    "status": "confirmed"
+  }
+},
+{
+  "model": "my_project.appointment",
+  "pk": 9,
+  "fields": {
+    "start_appointment": "07:30:00",
+    "end_appointment": "08:00:00",
+    "patient": 7,
+    "doctor": 1,
+    "date": "2026-10-05",
+    "day": "monday",
+    "reson": "oooo",
+    "status": "confirmed"
+  }
+},
+{
+  "model": "my_project.appointment",
+  "pk": 10,
+  "fields": {
+    "start_appointment": "03:00:00",
+    "end_appointment": "03:30:00",
+    "patient": 7,
+    "doctor": 1,
+    "date": "2026-10-05",
+    "day": "monday",
+    "reson": "cacd'dd'd'",
+    "status": "confirmed"
+  }
+},
+{
+  "model": "my_project.appointment",
+  "pk": 11,
+  "fields": {
+    "start_appointment": "06:30:00",
+    "end_appointment": "07:00:00",
+    "patient": 11,
+    "doctor": 1,
+    "date": "2026-10-05",
+    "day": "monday",
+    "reson": "cacd'dd'd'",
+    "status": "confirmed"
+  }
+},
+{
+  "model": "my_project.appointment",
+  "pk": 12,
+  "fields": {
+    "start_appointment": "06:00:00",
+    "end_appointment": "06:30:00",
+    "patient": 11,
+    "doctor": 1,
+    "date": "2026-10-05",
+    "day": "monday",
+    "reson": "cacd'dd'd'",
+    "status": "confirmed"
+  }
+},
+{
+  "model": "my_project.appointment",
+  "pk": 13,
+  "fields": {
+    "start_appointment": "01:30:00",
+    "end_appointment": "02:00:00",
+    "patient": 11,
+    "doctor": 1,
+    "date": "2026-10-05",
+    "day": "monday",
+    "reson": "cacd'dd'd'",
+    "status": "confirmed"
+  }
+},
+{
+  "model": "my_project.appointment",
+  "pk": 14,
+  "fields": {
+    "start_appointment": "03:30:00",
+    "end_appointment": "04:00:00",
+    "patient": 12,
+    "doctor": 1,
+    "date": "2026-10-05",
+    "day": "monday",
+    "reson": "cacd'dd'd'",
+    "status": "confirmed"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-09-27T10:13:32.860Z",
+    "user": 1,
+    "content_type": 2,
+    "object_id": "1",
+    "object_repr": "ahmad",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-09-27T10:13:52.982Z",
+    "user": 1,
+    "content_type": 2,
+    "object_id": "2",
+    "object_repr": "semoo",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-09-27T10:14:21.324Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "ahmad",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-09-27T10:14:52.846Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "semoo",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-09-27T10:15:16.953Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "3",
+    "object_repr": "semoo",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-09-27T10:15:35.270Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "4",
+    "object_repr": "ahmad",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$252l2rINPW9nrpI3wMEd3C$6Bet0QGSxsBy2Fkj+3OvKMAHHQg0mc3ADwdqHjQRCnk=",
+    "last_login": "2026-10-04T15:25:30.386Z",
+    "is_superuser": true,
+    "username": "semoo",
+    "first_name": "",
+    "last_name": "",
+    "email": "alnmha67@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-09-27T10:10:47.360Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$oQX9oHzIH5b9pZzf02kT0z$3lsvAPFNI3hx+VVhDXRyOK9ox0hyMQPo3m2k0UH64LI=",
+    "last_login": "2026-09-27T10:12:16.258Z",
+    "is_superuser": false,
+    "username": "ahmad",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-27T10:12:14.087Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$Akv1JMCWAm9l6UaOXVxgBh$bzlAnCfiWs91jsV085VOtSbDqYBtMBWT/BnIe45ruHA=",
+    "last_login": "2026-09-27T10:12:29.262Z",
+    "is_superuser": false,
+    "username": "semoo090909090909",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-27T10:12:27.108Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$DiE1PSk69yYb2DSPL8s2ym$vkeNbeSF9TbsKgatgOUXuVIQNpGXDPtMb8fFlHb02T8=",
+    "last_login": "2026-09-27T10:12:41.654Z",
+    "is_superuser": false,
+    "username": "kokok",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-27T10:12:39.499Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$28fYH5nCb2domdRPSKxne5$eVnC7AFPhyLvI2idd0lWVgyWrqq2en6SMSGPqn4SMCc=",
+    "last_login": "2026-09-27T10:47:50.621Z",
+    "is_superuser": false,
+    "username": "now",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-27T10:47:48.444Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$42odvXa6rNb8SWgfFg1smW$Si2solPq2xXYRkM3Vns6p63BVgDhR9TWlRdk7Gv+DDo=",
+    "last_login": "2026-09-27T13:46:27.676Z",
+    "is_superuser": false,
+    "username": "semooko",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-27T13:46:25.529Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$Yx7NY2FNaUn3zSTdVnQfN5$xJLx+eaU8OWQ91svCZDb4SVVGdxuvyUWazyy+iOH27c=",
+    "last_login": "2026-09-27T14:07:05.557Z",
+    "is_superuser": false,
+    "username": "qqqq",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-27T14:07:03.366Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$u8SpptIqVViAzrWmudAyaG$vSF8ZHjF7tDLAnl8iKBlp0JsgNm/4606CXt6FS2+UbU=",
+    "last_login": "2026-09-27T14:25:29.907Z",
+    "is_superuser": false,
+    "username": "now7667",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-27T14:25:27.756Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$07vsjgi90Y5mGI2chhsTAj$2D9UedqTIGZbx7Jyd2koj9iS4SfQ1V4gZWjD9mTXdTc=",
+    "last_login": "2026-09-27T15:07:38.056Z",
+    "is_superuser": false,
+    "username": "ahmad3223",
+    "first_name": "",
+    "last_name": "",
+    "email": "alnmha67@gmail.come",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-27T15:07:35.806Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$P7RgF29pxzEquxCj5tgUvu$hsi+v5ugdQn81HKSyAjcW595Ds2805/ypOS/qpdH67g=",
+    "last_login": "2026-09-27T15:15:04.733Z",
+    "is_superuser": false,
+    "username": "qqqqdd",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-27T15:15:02.491Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 11,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$WsYhJ7ZUKVLoQwDu51aWkW$xw+HBBKYhOs9m2YCeUGEfo/cENAkPgB0BvhxyRi82c8=",
+    "last_login": "2026-09-27T16:57:44.601Z",
+    "is_superuser": false,
+    "username": "semoo3333",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-27T16:57:42.409Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 12,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$oZoYE6NqMFh8TlJhliQe64$O0bO1SXCBag9bMMXzIdzmALayLgjDz2h56Z9FzKN0K4=",
+    "last_login": "2026-09-29T21:09:11.936Z",
+    "is_superuser": false,
+    "username": "semooxx",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-29T21:09:09.630Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 13,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$CtCmkAgPRnnVsbsXyLMNBr$MgdblxSt9K5OcBgD5Q2YjioEzms+u5k/JtCMw9VVSAU=",
+    "last_login": "2026-09-29T21:12:31.790Z",
+    "is_superuser": false,
+    "username": "lkokokok",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-29T21:12:29.633Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 14,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$nl7MeYg4597JvMceC7FvpM$ngD2j3BcvOWYuf71WulRFZSn4vYXtdMCW3DHOnwPuss=",
+    "last_login": "2026-09-29T21:18:08.969Z",
+    "is_superuser": false,
+    "username": "ppppppppppp",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-29T21:18:06.711Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 15,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$2cpQrx8IXR9Rv7PGaLvCIz$dskhigjJnxIKs6VxD6Zoami0JukSe8v9PRHWJYdUmbQ=",
+    "last_login": "2026-09-29T21:21:26.100Z",
+    "is_superuser": false,
+    "username": "semoo9889",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-29T21:21:23.783Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 16,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$nsCQZStnQNCS7DrbTUrrmV$x7tJQQzk1eM3hdlLfBwjK/QE9ZRO5nZg5438Si5/N7E=",
+    "last_login": "2026-10-01T20:21:27.869Z",
+    "is_superuser": false,
+    "username": "kokok666",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-01T20:21:25.734Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 17,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$zI2orlruxBuPz0U9FLZ4JQ$Ajd8kbCe3t4d1PhAqS+nyxa6RwX8FZpAkUjMmXdayfo=",
+    "last_login": "2026-10-01T20:33:10.909Z",
+    "is_superuser": false,
+    "username": "semoonn",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-01T20:33:08.646Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "blohyricfeyy2a1eurgrgfuf0fdf34b8",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCwwBSX7nsGMjCMVA0kpV0Z765NutDtf-_9lwi4rSVsPS9hJnERWpx-t4jpkesO6I711mRqdV3mKHdFHrTLqVF-Xg_376BgL9_aaMdn65FgMIMnb8Ba4MEpYzl6YAZrtB4hQiKFnkdFOZHBDIDglBXvD8CjN2Y:1xDO5i:hBdywdrLBK5F96T-3BKU5PqYMGesoNhdD_D1ZHpjdSM",
+    "expire_date": "2026-10-18T15:25:30.394Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "yhgh38blty3pz6jawd3ugxm9rthyw75p",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCwwBSX7nsGMjCMVA0kpV0Z765NutDtf-_9lwi4rSVsPS9hJnERWpx-t4jpkesO6I711mRqdV3mKHdFHrTLqVF-Xg_376BgL9_aaMdn65FgMIMnb8Ba4MEpYzl6YAZrtB4hQiKFnkdFOZHBDIDglBXvD8CjN2Y:1xDO5h:GglxuaZyYAyPT_j6AKMMGLiEJRlqdkEnrJVla0tyej4",
+    "expire_date": "2026-10-18T15:25:29.852Z"
+  }
+}
+]

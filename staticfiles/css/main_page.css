@@ -1,0 +1,122 @@
+body{
+    background-color: rgb(161, 198, 198);
+}
+.txt1{
+    color: blue;
+    text-align: center;
+}
+.txt2{
+    color: blue;
+    text-align: center;
+}
+.txt3{
+    text-align: center;
+    color: blue;
+}
+.txt4{
+    text-align: center;
+    color: blue;
+}
+.m1{
+    display: inline-block;
+    width :370px;
+    height: 370px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px blue solid;
+}
+.m1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.m2{
+    display: inline-block;
+    width :370px;
+    height: 370px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px blue solid;
+}
+.m2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.m3{
+    display: inline-block;
+    width :370px;
+    height: 370px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px blue solid;
+}
+.m3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.m4{
+    display: inline-block;
+    width :370px;
+    height: 370px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px blue solid;
+}
+.m4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.link1{
+    position: relative;
+    left: 700px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    background-color:yellow;
+    border: 2px blue solid;
+    
+}
+.link1 a{
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}
+.link3{
+    position: relative;
+    left: 720px;
+    text-align: center;
+    width: 100px;
+    height: 25px;
+    display: inline-block;
+    background-color: yellow;
+    border: 2px blue solid;
+
+}
+.link3 a{
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}
+.link2{
+    position: relative;
+    left: 580px;
+    width: 100px;
+    height: 25px;
+    display: inline-block;
+    background-color:yellow;
+    border: 2px blue solid;
+  text-align: center;
+}
+.link2 a{
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}

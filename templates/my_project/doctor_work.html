@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/doctor_work.css' %}">
+</head>
+<body>
+    <center>
+       <h1>{{doctor.user.username}}</h1>
+        {% for schedule in schedules %}
+
+    <h2>{{ schedule.day}}{{ schedule.date  }}</h2>
+
+    {% for slot in schedule.slots %}
+
+        <div>
+            {{ slot.start }} - {{ slot.end }}
+
+            <a href="{% url 'check_appointment' doctor.id slot.start slot.end schedule.day schedule.date  %}">حجز</a>
+        </div>
+
+    {% endfor %}
+{% endfor %}
+    </center>
+</body>
+</html>

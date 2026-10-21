@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/doctor_page.css' %}">
+</head>
+<body>
+    {% for doctors in doctor %}
+    <center><div class="m1"><img src="{{doctors.img.url}}" alt=""></div>
+        <h4>{{doctors.user.username}}</h4>
+        <h4>{{doctors.job}}</h4>
+        <h5>{{doctors.discription}}</h5>
+    <h5><a href="{% url 'doctor_work' doctors.id %}">حجز موعد</a></h5></center>
+    {% endfor %}
+    
+</body>
+</html>

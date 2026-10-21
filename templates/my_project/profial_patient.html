@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/profial_patient.css' %}">
+</head>
+<body>{% if doctor %}
+    <h1 class="y">{{doctor.user.username}}</h1><br>
+    <h1 class="y1">{{doctor.job}}</h1><br>
+    <h1 class="y2">{{doctor.discription}}</h1><br>
+    <div><img src="{{doctor.img.url}}" alt=""></div><a href="{% url 'update_img' doctor.id %}">تغيير الصوره</a><br>
+    <a href="{% url 'update_doctor' doctor.id %}">تعديل بياناتي كطبيب</a>
+    <a href="">مواعيدي</a>
+    {% endif %}
+    {% if patient %}
+    <center><h1 class="x">{{patient.user.username}}</h1>
+        <br><br><br>
+    <h1 class="x2">{{patient.phone}}:رقم الهاتف</h1><br>
+    <h1 class="x3">{{patient.date_of_birth}}:تاريخ ميلادك</h1><br>
+    <a href="">مواعيدي</a>  <a href="{% url 'update_patient' patient.id %}"> تعديل بياناتي كمريض</a>
+    </center>
+    {% endif %}
+</body>
+</html>

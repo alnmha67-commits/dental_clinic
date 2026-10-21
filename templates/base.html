@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block extra_css %}{% endblock %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .a{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.a a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    flex: 1;
+    border: 2px blue solid;
+}
+</style>
+<body>
+    <div class="a">
+        <a href="{% url 'main_page' %}">الصفحه الئيسيه</a>
+        <a href="{% url 'doctor_page' %}">الدكاتره</a>
+        <a href="{% url 'profial_patient' %}">صفحتي</a>
+        <a href="{% url 'logut_page' %}">تسجيل الخروج</a>    
+    </div>
+{% block s %}{% endblock %}
+</body>
+</html>

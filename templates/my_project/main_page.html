@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block s %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main_page.css' %}">
+    <title>Document</title>
+</head>
+<body>
+<h1 class="txt1">Oval Dental Clinic</h1>
+    <h2 class="txt2">مرحباً في موقع عيادتنا</h2>
+     <h2 class="txt3">في عيادتنا نقدم جميع الخدمات بمختلف تخصصات طب الاسنان</h2>
+     <h2 class="txt4">مع نخبه من الأطباء</h2><br><br>
+     <div class="m1"><img src="/media/doctors/d1.jpeg" alt=""><p>الدكتوره نور </p></div>
+     <div class="m2"><img src="/media/doctors/d2.jpeg" alt=""><p>الدكتوره سوسن</p></div>
+     <div class="m3"><img src="/media/doctors/d3.jpeg" alt=""><p>الدكتور احمد</p></div>
+     <div class="m4"><img src="/media/doctors/d4.jpeg" alt=""><p>الدكتوره مايا</p></div>
+     <br><br><br><br>
+     <div class="link1"><a href="{% url 'doctor_page' %}">مشاهدة الخدمات المتوفره</a></div><br>
+     <div class="link2"><a href="{% url 'first_login' %}">تسجيل الدخول</a></div>
+     <div class="link3"><a href="tel:+962780056036">اتصل بنا</a></div>
+     <a href="{% url 'profial_patient' %}">profial</a>
+</body>
+</html>
+{% endblock s %}
+
+

@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/add_appointment.css' %}">
+</head>
+<body>
+    <center><div class="x1"><h1>{{doctor.user.username}}حجز موعد لدى الدكتور</h1></div></center>
+    <center><div class="x2"><h1>day{{day}} start at {{start}} end at {{end}}</h1></div> </center>
+     <center>   <form action="" method="POST">
+        {% csrf_token %}
+        <input type="text" name="reson" placeholder="سبب الحجز" id="" class="x3">
+        <button type="submit" class="x4">تأكيد الحجز</button>
+    </form></center>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(161, 198, 198);
+}
+div{
+    width: 200ox;
+    height: 200px;
+    border: 3px red solid;
+}
+div h1{
+    text-align: center;
+    color: red;
+}
