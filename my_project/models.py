@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Q
 from django.contrib.auth.models import User
 from datetime import timedelta,date
 from django.utils.dateparse import parse_date,parse_time
@@ -54,6 +55,77 @@ class Appointment(models.Model):
           constraints=[models.UniqueConstraint(fields=["doctor","day"
                          ,"start_appointment","end_appointment","date"]
                          ,name="unique_appointment")]
+
+
+
+class Payment(models.Model):
+
+    class Status(models.TextChoices):
+        INITIATING = "INITIATING", "Initiating"
+        PENDING = "PENDING", "Pending"
+        PAID = "PAID", "Paid"
+        FAILED = "FAILED", "Failed"
+        CANCELLED = "CANCELLED", "Cancelled"
+        REFUNDED = "REFUNDED", "Refunded"
+
+    appointment = models.ForeignKey(
+        "my_project.Appointment",
+        on_delete=models.PROTECT,
+        related_name="payments"
+    )
+
+    amount = models.DecimalField(
+        max_digits=10,
+        decimal_places=2
+    )
+
+    currency = models.CharField(
+        max_length=3,
+        default="JOD"
+    )
+
+    status = models.CharField(
+        max_length=20,
+        choices=Status.choices,
+        default=Status.INITIATING
+    )
+
+    idempotency_key = models.UUIDField(
+        unique=True
+    )
+
+    provider_reference = models.CharField(
+        max_length=255,
+        null=True,
+        blank=True
+    )
+
+    checkout_url = models.URLField(
+        null=True,
+        blank=True
+    )
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        indexes = [
+            models.Index(
+                fields=["appointment", "status"],
+                name="payment_appt_status_idx"
+            )
+        ]
+
+        constraints = [
+            models.UniqueConstraint(
+                fields=["appointment"],
+                condition=Q(status="PENDING"),
+                name="unique_pending_payment"
+            )
+        ]
+
+    def __str__(self):
+        return f"Payment {self.id} - {self.status}"
 
 
 

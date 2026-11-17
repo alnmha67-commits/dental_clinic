@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/6.1/ref/settings/
 from pathlib import Path
 import os
 from dotenv import load_dotenv
+from datetime import timedelta
+GOOGLE_CLIENT_ID=os.environ.get("GOOGLE_CLIENT_ID","")
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv()
@@ -25,7 +27,7 @@ SECRET_KEY =os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG")=="TRUE"
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS","").split(",")
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,7 +40,51 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'django_filters',
 ]
+
+
+     
+
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ],
+
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.IsAuthenticated",
+    ],
+
+    "DEFAULT_FILTER_BACKENDS": [
+        "django_filters.rest_framework.DjangoFilterBackend",
+        "rest_framework.filters.SearchFilter",
+        "rest_framework.filters.OrderingFilter",
+    ],
+
+    "DEFAULT_THROTTLE_CLASSES": [
+        "api.throttles.CustomScopedThrottle",
+    ],
+
+    "DEFAULT_THROTTLE_RATES": {
+        "patient_user": "30/hour",
+        "patient_anon": "10/hour",
+
+        "doctor_user": "5/hour",
+        "doctor_anon": "5/hour",
+
+        "appointment_user": "40/hour",
+        "appointment_anon": "10/hour",
+    },
+}
+
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=15),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
+    "AUTH_HEADER_TYPES": ("Bearer",),
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

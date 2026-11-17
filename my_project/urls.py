@@ -17,4 +17,5 @@ urlpatterns=[
     path('update_doctor/<int:id>',views.update_doctor,name="update_doctor"),
     path('update_img/<int:id>',views.update_img,name="update_img"),
     path('my_appointment',views.my_appointment,name="my_appointment"),
+    path("google",views.google,),
 ]

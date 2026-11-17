@@ -133,3 +133,5 @@ def my_appointment(request):
     user_id=request.user.id
     appointments=my_appointmente(user_id)
     return render(request,'my_project/my_appointment.html',{'appointments':appointments})
+def google(request):
+    return render (request,"my_project/google.html")

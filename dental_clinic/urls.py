@@ -22,6 +22,11 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('dental/',include('my_project.urls')),
+    path('api_doctor/',include('api.doctors_api.urls')),
+    path('api_patient/',include('api.patient_api.urls')),
+    path('api_doctor_work/',include('api.doctor_work_api.urls')),
+    path('api_appointment/',include('api.appointment_api.urls')),
+    path('api/auth/',include('api.accounts.urls')),
 ] + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
 handler500="my_project.handlers.custom_500"
 handler400="my_project.handlers.custom_400"

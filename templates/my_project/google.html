@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Login Test</title>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 180px;
+            margin-top: 15px;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Google Login Test</h2>
+
+    <div id="googleButton"></div>
+
+    <p id="message">Waiting for Google login...</p>
+
+    <h3>Google ID Token</h3>
+    <textarea id="token" readonly></textarea>
+
+    <script>
+        function handleCredentialResponse(response) {
+            document.getElementById("token").value =
+                response.credential;
+
+            document.getElementById("message").textContent =
+                "Google login successful! ID Token received.";
+        }
+
+        window.onload = function () {
+
+            google.accounts.id.initialize({
+                client_id: "730080812590-fos893qm3te38t199944k8fafl5qka0o.apps.googleusercontent.com",
+                callback: handleCredentialResponse,
+                use_fedcm_for_prompt: false
+            });
+
+            google.accounts.id.renderButton(
+                document.getElementById("googleButton"),
+                {
+                    theme: "outline",
+                    size: "large",
+                    text: "signin_with",
+                    shape: "rectangular"
+                }
+            );
+        };
+    </script>
+
+</body>
+</html>

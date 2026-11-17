@@ -17,7 +17,6 @@ def doctor_worke(doctor_id):
             doctor_works=cache.get(f"doctor_works_{doctor_id}")
             if doctor_works is None:
                doctor_works =Doctor_work.objects.select_related('doctor').filter(doctor_id=doctor_id)
-    
             cache.set(f"doctor_works_{doctor_id}",doctor_works,timeout=10*60)  
     doctor=doctor_works[0].doctor
     schedules = []
