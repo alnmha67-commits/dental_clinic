@@ -11,7 +11,11 @@ on:
 jobs:
   quality:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - run: echo "Checking code"
+
+  tests:
+    needs: quality
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running tests"
